@@ -63,7 +63,7 @@ model.summary()
 
 model.compile(optimizer='adam', loss = 'mse')
 model.fit(x_train, y_train, epochs=10, batch_size=1,validation_data=(x_vaild,y_valid))
-pred = model.predict(x_test)
+pred = model.predict (x_test)
 
 plt.figure(figsize=(12, 9))
 plt.plot(y_test, label='actual')        #원래 데이터~
